@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agencia Porsche</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.logo {
+  margin-top: 10px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+section {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los autos se ajusten automáticamente en varias filas */
+  justify-content: center;
+  margin-top: 20px;
+}
+.auto {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  margin: 10px; /* Espacio entre los autos */
+}
+.auto img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.auto-descripcion {
+  margin-top: 10px;
+}
+.auto-precio {
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video para cubrir todo el área */
+  z-index: -1; /* Coloca el video detrás de otros elementos */
+}
+</style>
+</head>
+<body>
+
+<header class="logo">
+  <img src="link imagen" alt="Logotipo Porsche">
+  <h1>Rendimiento y elegancia en su máxima expresión</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Modelos</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+</nav>
+
+<video autoplay muted loop>
+  <source src="Pagina Porsche/The new 911 ST 60 years of the Porsche 911.mp4" type="video/mp4"> <!-- Ruta del video -->
+  Tu navegador no admite la reproducción de video.
+</video>
+
+<section>
+<div class="auto">
+<img src="911_turbo.jpg" alt="Porsche 911 Turbo">
+<h2>911 Turbo</h2>
+<p class="auto-descripcion">El clásico redefinido.</p>
+<span class="auto-precio">$200,000</span>
+<button>¡Reservar prueba de manejo!</button>
+</div>
+
+<div class="auto">
+<img src="cayenne.jpg" alt="Porsche Cayenne">
+<h2>Cayenne</h2>
+<p class="auto-descripcion">La SUV deportiva por excelencia.</p>
+<span class="auto-precio">$150,000</span>
+<button>¡Reservar prueba de manejo!</button>
+</div>
+
+<div class="auto">
+<img src="panamera.jpg" alt="Porsche Panamera">
+<h2>Panamera</h2>
+<p class="auto-descripcion">Elegancia y rendimiento.</p>
+<span class="auto-precio">$180,000</span>
+<button>¡Reservar prueba de manejo!</button>
+</div>
+
+<div class="auto">
+<img src="macan.jpg" alt="Porsche Macan">
+<h2>Macan</h2>
+<p class="auto-descripcion">La SUV compacta de lujo.</p>
+<span class="auto-precio">$120,000</span>
+<button>¡Reservar prueba de manejo!</button>
+</div>
+
+<div class="auto">
+<img src="718_cayman.jpg" alt="Porsche 718 Cayman">
+<h2>718 Cayman</h2>
+<p class="auto-descripcion">Deportividad pura.</p>
+<span class="auto-precio">$150,000</span>
+<button>¡Reservar prueba de manejo!</button>
+</div>
+
+<div class="auto">
+<img src="taycan.jpg" alt="Porsche Taycan">
+<h2>Taycan</h2>
+<p class="auto-descripcion">El futuro de la movilidad eléctrica.</p>
+<span class="auto-precio">$160,000</span>
+<button>¡Reservar prueba de manejo!</button>
+</div>
+
+<div class="auto">
+  <img src="macan.jpg" alt="Porsche Macan">
+  <h2>911 Carrera</h2>
+  <p class="auto-descripcion">La SUV compacta de lujo.</p>
+  <span class="auto-precio">$120,000</span>
+  <button>¡Reservar prueba de manejo!</button>
+  </div>
+
+  <div class="auto">
+    <img src="macan.jpg" alt="Porsche Macan">
+    <h2>Boxster</h2>
+    <p class="auto-descripcion">La SUV compacta de lujo.</p>
+    <span class="auto-precio">$120,000</span>
+    <button>¡Reservar prueba de manejo!</button>
+    </div>
+
+    <div class="auto">
+      <img src="macan.jpg" alt="Porsche Macan">
+      <h2>911 GT3</h2>
+      <p class="auto-descripcion">La SUV compacta de lujo.</p>
+      <span class="auto-precio">$120,000</span>
+      <button>¡Reservar prueba de manejo!</button>
+      </div>
+
+      <div class="auto">
+        <img src="macan.jpg" alt="Porsche Macan">
+        <h2>Cayman GT4</h2>
+        <p class="auto-descripcion">La SUV compacta de lujo.</p>
+        <span class="auto-precio">$120,000</span>
+        <button>¡Reservar prueba de manejo!</button>
+        </div>
+
+        <div class="auto">
+          <img src="macan.jpg" alt="Porsche Macan">
+          <h2>911 Targa</h2>
+          <p class="auto-descripcion">La SUV compacta de lujo.</p>
+          <span class="auto-precio">$120,000</span>
+          <button>¡Reservar prueba de manejo!</button>
+          </div>
+
+          <div class="auto">
+            <img src="macan.jpg" alt="Porsche Macan">
+            <h2>911 Carrera 4S</h2>
+            <p class="auto-descripcion">La SUV compacta de lujo.</p>
+            <span class="auto-precio">$120,000</span>
+            <button>¡Reservar prueba de manejo!</button>
+            </div>
+
+            <div class="auto">
+              <img src="macan.jpg" alt="Porsche Macan">
+              <h2>911 Turbo S</h2>
+              <p class="auto-descripcion">La SUV compacta de lujo.</p>
+              <span class="auto-precio">$120,000</span>
+              <button>¡Reservar prueba de manejo!</button>
+              </div>
+
+              <div class="auto">
+                <img src="macan.jpg" alt="Porsche Macan">
+                <h2>Cayenne Coupe</h2>
+                <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                <span class="auto-precio">$120,000</span>
+                <button>¡Reservar prueba de manejo!</button>
+                </div>
+
+                <div class="auto">
+                  <img src="macan.jpg" alt="Porsche Macan">
+                  <h2>911 Carrera GTS</h2>
+                  <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                  <span class="auto-precio">$120,000</span>
+                  <button>¡Reservar prueba de manejo!</button>
+                  </div>
+
+                  <div class="auto">
+                    <img src="macan.jpg" alt="Porsche Macan">
+                    <h2>918 Spyder</h2>
+                    <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                    <span class="auto-precio">$120,000</span>
+                    <button>¡Reservar prueba de manejo!</button>
+                    </div>
+
+                    <div class="auto">
+                      <img src="macan.jpg" alt="Porsche Macan">
+                      <h2>911 GT2 RS</h2>
+                      <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                      <span class="auto-precio">$120,000</span>
+                      <button>¡Reservar prueba de manejo!</button>
+                      </div>
+
+                      <div class="auto">
+                        <img src="macan.jpg" alt="Porsche Macan">
+                        <h2>Macan Turbo</h2>
+                        <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                        <span class="auto-precio">$120,000</span>
+                        <button>¡Reservar prueba de manejo!</button>
+                        </div>
+
+                        <div class="auto">
+                          <img src="macan.jpg" alt="Porsche Macan">
+                          <h2>Panamera Turbo S</h2>
+                          <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                          <span class="auto-precio">$120,000</span>
+                          <button>¡Reservar prueba de manejo!</button>
+                          </div>
+
+                          <div class="auto">
+                            <img src="macan.jpg" alt="Porsche Macan">
+                            <h2>911 Speedster</h2>
+                            <p class="auto-descripcion">La SUV compacta de lujo.</p>
+                            <span class="auto-precio">$120,000</span>
+                            <button>¡Reservar prueba de manejo!</button>
+                            </div>
+
+</section>
+
+<footer>
+<p>2024 © Agencia Porsche. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

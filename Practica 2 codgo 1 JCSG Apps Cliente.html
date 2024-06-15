@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: rgb(190, 13, 13);
+        }
+    </style>
+    <title>Retiro de dinero</title>
+    <style>
+        /* Definición de clases y sus funciones */
+
+        /* Transición suave para cambios de color en los enlaces */
+        .link {
+            transition: color 0.3s ease;
+        }
+
+        /* Cambio de color al pasar el cursor sobre los enlaces */
+        .link:hover {
+            color: rgb(0, 153, 255);
+        }
+
+        /* Animación de fade-in para elementos con la clase 'fade-in' */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Cambio de tamaño al hacer clic en un botón con la clase 'btn' */
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Cambio de tamaño y sombra al hacer hover sobre una tarjeta con la clase 'card' */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Centrar el contenido en la página */
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            margin: 0;
+            margin-top: 70px; /* Margen superior de 100px */
+        }
+
+        /* Estilo adicional para el formulario */
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <div>
+            <h2>Ingrese la cantidad a retirar:</h2>
+            <form action="#" method="post" id="withdrawalForm">
+                <label for="amount">Cantidad:</label>
+                <input type="number" id="amount" name="amount" min="0" step="10" required>
+                <br><br>
+                <input type="submit" value="Retirar">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("withdrawalForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let amount = document.getElementById("amount").value;
+            // Aquí iría el código para procesar la solicitud y mostrar el mensaje con la cantidad retirada
+            alert("Se ha retirado $" + amount);
+        });
+    </script>
+</body>
+</html>
